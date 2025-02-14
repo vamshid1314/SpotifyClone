@@ -1,0 +1,28 @@
+Array.from(document.getElementsByClassName("playingSong")).forEach((ele,i)=>{
+    ele.addEventListener("click", (e) => {
+
+        
+    if (audioElement.paused || audioElement.currentTime <= 0) {
+        songIndex = parseInt(e.target.id);
+        masterSong.innerText = `${songs[songIndex - 1].songName}`;
+        makeAllPlays();
+        e.target.classList.remove("fa-play-circle");
+        e.target.classList.add("fa-pause-circle");
+
+        audioElement.src = `songs/${songIndex}.mp3`;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        
+        masterPlay.classList.remove("fa-circle-play");
+        masterPlay.classList.add("fa-circle-pause");
+        gif.style.opacity = 1;
+    } else {
+        audioElement.pause();
+        e.target.classList.remove("fa-pause-circle");
+        e.target.classList.add("fa-play-circle");
+        masterPlay.classList.remove("fa-circle-pause");
+        masterPlay.classList.add("fa-circle-play");
+        gif.style.opacity = 0;
+    }
+}); 
+});

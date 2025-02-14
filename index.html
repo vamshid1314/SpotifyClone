@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="Spotify.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Dalapathi</h1>
+            <img src="cover.jpg" alt="1">
+            <div class="songName">
+                <p id="masterSong">Singarala</p>
+                <img src="playing1.gif" alt="1" id="gif">
+            </div>
+            <div class="songDes">
+                <ul>
+                    <li>Singers: S. P. Balasubrahmanyam,K. s. Chithra</li>
+                    <li>Music: Ilaiyaraaja</li>
+                    <li>Director: Mani Ratnam</li>
+                    <li>Cast: Rajinikanth, Mammootty, Shobana </li>
+                </ul>
+            </div>
+        </div>
+        <div class="songBanner">
+            <div class="list">
+                <ol>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">1. Singarala </span>
+                            <p class="time">5:29 <i class="playingSong fa-regular fa-circle-play" id="1"></i></p>
+                        </li>
+                    </div>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">2. Sundari Ne</span> 
+                            <p class="time">7:01 <i class="playingSong fa-regular fa-circle-play" id="2"></i></p>
+                        </li>
+                    </div>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">3. Muddabanti</span>
+                             <p class="time">4:57 <i class="playingSong fa-regular fa-circle-play" id="3"></i></p>
+                        </li>
+                    </div>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">4. Ada Janmaku </span>
+                            <p class="time">2:58 <i class="playingSong fa-regular fa-circle-play" id="4"></i></p>
+                        </li>
+                    </div>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">5. Yamuna Thatilo - Sad</span>
+                             <p class="time">1:18 <i class="playingSong fa-regular fa-circle-play" id="5"></i></p>
+                        </li>
+                    </div>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">6. Chilakamma </span>
+                            <p class="time">7:10 <i class="playingSong fa-regular fa-circle-play" id="6"></i></p>
+                        </li>
+                    </div>
+                    <div class="song">
+                        <li>
+                             <span class="eachSong">7. Yamuna Thatilo</span> 
+                            <p class="time">1:48 <i class="playingSong fa-regular fa-circle-play" id="7"></i></p>
+                        </li>
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <!-- fontawesome-icons -->
+            <i class="fa-solid fa-backward-step" id="prev"></i>
+            <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="for"></i>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bb5b9c0092.js" crossorigin="anonymous"></script>
+</body>
+</html>

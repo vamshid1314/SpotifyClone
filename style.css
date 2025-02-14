@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Lato", serif;
+}
+
+nav ul{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 69px;
+    color: aliceblue;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    height: 47px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+.container{
+    min-height: 66vh;
+    background-color: black;
+    color: white;
+    font-family: "Varela Round", serif;
+    display: flex;
+    width: 70%;
+    margin:10px auto;
+    border-radius: 13px;
+    padding: 33px;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.bottom{
+    background-color: black;
+    color: white;
+    height: 100px;
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{ 
+    margin-top:20px;
+}
+
+.icons i{
+    cursor: pointer;
+    font-size: 34px;
+    margin: 0 7px;
+}
+
+#progressBar{
+    width: 75vw;
+    cursor: pointer;
+    background: #4caf50;
+    transition: background 0.3s ease-in-out;
+}
+
+.songList{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gif{
+    height: 13px;
+    width: 30px;
+}
+
+
+.songList img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.songList h1{
+  margin-bottom: 20px;
+  margin-right:45px;
+  text-shadow: 4px 2px 4px grey;
+}
+
+.songName{
+    margin-top: 20px;
+    padding: 8px;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#gif{
+    height: 13px;
+    width: 30px;
+    opacity: 0;
+    margin-left:100px;
+}
+
+
+.songName i{
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.songName p{
+    cursor: pointer;
+}
+
+
+
+.songDes{
+   height: 140px;
+   width: 95%;
+   padding: 10px;
+}
+
+.songDes ul{
+    list-style-type: none;
+    font-size: 10px;
+}
+
+.songDes ul li{
+    margin: 5px 0;
+}
+
+.songBanner{
+    height: 500px;
+    width: 400px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    padding-top: 75px;
+    color: whitesmoke;
+    /* padding-left: 20px; */
+    width: 100%;
+    height: 100%;
+}
+
+.list ol{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    /* margin-top: 20px; */
+    /* margin-left: 18px; */
+    list-style-type: none;
+}
+
+.list ol li{
+    width: 100%;
+    display: flex;
+    /* padding-right: 5px; */
+    justify-content: space-between;
+}
+
+.song{
+    height: 40px;
+    width: 300px;
+    margin: 5px 0;
+    padding-left:8px ;
+    display: flex;
+    align-items: center;
+}
+
+.song:hover{
+    outline: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.time{
+    padding-right: 5px;
+}
